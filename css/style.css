@@ -6,7 +6,8 @@
     width: 100%;
     height: 48px;
     z-index: 1;
-    background-color: whitesmoke;
+    opacity: 0.8;
+    background-color: #303030;
 }
 
 .nav-logo h1 {
@@ -14,7 +15,7 @@
     font-size: 32px;
     font-weight: 300;
     text-align: left;
-    color: black;
+    color: whitesmoke;
     margin-top: 8px;
     margin-left: 32px;
 }
@@ -31,6 +32,7 @@
         right: 32px;
         width: 24px;
         height: 16px;
+        z-index: 2;
     }
 
     .hamburger span {
@@ -38,9 +40,8 @@
         font-family: 'Comfortaa', sans-serif;
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: whitesmoke;
         left: 0;
-        z-index: 1;
         transition: top .2s, bottom .2s, opacity .2s, transform .2s;
     }
 
@@ -75,28 +76,22 @@
 
 .nav-menu {
     position: fixed;
-    background-color: whitesmoke;
+    background-color: #303030;
     visibility: hidden;
-    top: 48px;
-    right: -100%;
-    width: auto;
+    bottom: -100%;
+    width: 100%;
     height: 100%;
-    z-index: 1;
-    opacity: 0.9;
     transition: 0.5s ease-in;
 
 }
 
 .nav-menu.active {
     position: fixed;
-    background-color: whitesmoke;
+    background-color: #303030;
     visibility: visible;
-    top: 48px;
-    right: 0px;
-    width: auto;
+    bottom: 0;
+    width: 100%;
     height: 100%;
-    z-index: 1;
-    opacity: 0.9;
     transition: 0.5s ease-out;
 }
 
@@ -105,33 +100,34 @@
     font-size: 20px;
     text-align: center;
     list-style: none;
-    padding: 16px 32px 0 32px;
+    padding: 64px 32px 0 32px;
 }
 
-.nav-menu a {
-    color: black;
+.nav-menu li a {
+    color: whitesmoke;
     line-height: 2em;
     text-decoration: none;
-    border-bottom: 1px transparent;
-    transition: all .2s;
+    transition: .2s;
 }
 
 .nav-menu a:hover {
-    color: dimgray;
+    color: darkgrey;
 }
+
 
     /* Social-media icons */
 
     .sm-icons-menu {
         display: inherit;
         text-align: center;
+        cursor: pointer;
     }
 
     .sm-icons-menu img {
         width: 24px;
         height: auto;
         margin: 0 2px 0 2px;
-        filter: grayscale(1);
+        filter: grayscale(0.5);
         transition: 0.2s;
     }
 
@@ -152,13 +148,14 @@
     .sm-icons {
         display: inherit;
         margin: 12px 0 0 32px;
+        cursor: pointer;
     }
 
     .sm-icons img {
         width: 24px;
         height: auto;
         margin: 0 2px 0 2px;
-        filter: grayscale(1);
+        filter: grayscale(0.5);
         transition: 0.2s;
     }
 
@@ -171,7 +168,24 @@
     }
 
     /* Menu */
+    .nav-menu {
+        right: -100%;
+        bottom: 0;
+        width: auto;
+        height: 100%;
+        transition: 0.5s ease-in;
+
+    }
+
+    .nav-menu.active {
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: 100%;
+        transition: 0.5s ease-out;
+    }
+
     .nav-menu ul {
-        padding: 32px 64px 0 64px;
+        padding: 64px 64px 0 64px;
     }
 }
