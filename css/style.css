@@ -11,91 +11,167 @@
 
 .nav-logo h1 {
     font-family: 'Comfortaa', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 300;
     text-align: left;
     color: black;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-left: 32px;
 }
 
-.nav-contact {
+.sm-icons {
     display: none;
-    margin: 12px 0 0 32px;
 }
 
-.nav-contact img {
-    width: 24px;
-    height: auto;
-    padding: 4px;
-    filter: grayscale(1);
-    transition: 0.2s;
-}
+    /* Hamburger */
 
-.nav-contact img:hover {
-    filter: grayscale(0);
-}
+    .hamburger {
+        position: fixed;
+        top: 16px;
+        right: 32px;
+        width: 24px;
+        height: 16px;
+    }
 
-/* Hamburger */
+    .hamburger span {
+        position: absolute;
+        font-family: 'Comfortaa', sans-serif;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        left: 0;
+        z-index: 1;
+        transition: top .2s, bottom .2s, opacity .2s, transform .2s;
+    }
 
-.hamburger {
+    .hamburger span:nth-child(1) {
+        top: 0
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: calc(50% - 1px);
+        transform: rotate(45deg);
+    }
+
+    .hamburger span:nth-child(2) {
+        top: calc(50% - 1px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+        transform: rotate(-45deg);
+    }
+
+    .hamburger span:nth-child(3) {
+        bottom: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        bottom: calc(50% - 1px);
+        transform: rotate(-45deg);
+    }
+
+/* Menu */
+
+.nav-menu {
     position: fixed;
-    top: 16px;
-    right: 32px;
-    width: 24px;
-    height: 16px;
-    transition: .2s;
+    background-color: whitesmoke;
+    visibility: hidden;
+    top: 48px;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    transition: 0.5s ease-in;
+
 }
 
-.hamburger.active {
-    transform: rotate(180deg);
+.nav-menu.active {
+    position: fixed;
+    background-color: whitesmoke;
+    visibility: visible;
+    top: 48px;
+    right: 0px;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    transition: 0.5s ease-out;
 }
 
-.hamburger span {
-    position: absolute;
-    font-family: 'Pacifico', sans-serif;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    left: 0;
-    transition: top .2s .2s, bottom .2s .2s, opacity .3s .1s, transform .2s .2s;
+.nav-menu ul {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    list-style: none;
+    padding: 16px 32px 0 32px;
 }
 
-.hamburger span:nth-child(1) {
-    top: 0
+.nav-menu a {
+    color: black;
+    line-height: 2em;
+    text-decoration: none;
+    border-bottom: 1px transparent;
+    transition: all .2s;
 }
 
-.hamburger.active span:nth-child(1) {
-    top: calc(50% - 1px);
-    transform: rotate(45deg);
+.nav-menu a:hover {
+    color: dimgray;
 }
 
-.hamburger span:nth-child(2) {
-    top: calc(50% - 1px);
-}
+    /* Social-media icons */
 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
+    .sm-icons-menu {
+        display: inherit;
+        text-align: center;
+    }
 
-.hamburger span:nth-child(3) {
-    bottom: 0;
-}
+    .sm-icons-menu img {
+        width: 24px;
+        height: auto;
+        margin: 0 2px 0 2px;
+        filter: grayscale(1);
+        transition: 0.2s;
+    }
 
-.hamburger.active span:nth-child(3) {
-    bottom: calc(50% - 1px);
-    transform: rotate(-45deg);
-}
+    .sm-icons-menu img:hover {
+        filter: grayscale(0);
+    }
 
 /* Desctop mode */
 
 @media (min-width: 768px) {
+
+    /* Header */
     .nav-logo h1 {
         text-align: center;
         margin-left: 0;
     }
 
-    .nav-contact {
+    .sm-icons {
         display: inherit;
+        margin: 12px 0 0 32px;
+    }
+
+    .sm-icons img {
+        width: 24px;
+        height: auto;
+        margin: 0 2px 0 2px;
+        filter: grayscale(1);
+        transition: 0.2s;
+    }
+
+    .sm-icons img:hover {
+        filter: grayscale(0);
+    }
+
+    .sm-icons-menu {
+        display: none;
+    }
+
+    /* Menu */
+    .nav-menu ul {
+        padding: 32px 64px 0 64px;
     }
 }
