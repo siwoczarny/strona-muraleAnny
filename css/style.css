@@ -1,3 +1,7 @@
+* {
+    font-family: 'Comfortaa', sans-serif;
+}
+
 /* Navbar */
 
 #header {
@@ -6,12 +10,11 @@
     width: 100%;
     height: 48px;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.9;
     background-color: #303030;
 }
 
 .nav-logo h1 {
-    font-family: 'Comfortaa', sans-serif;
     font-size: 32px;
     font-weight: 300;
     text-align: left;
@@ -37,7 +40,6 @@
 
     .hamburger span {
         position: absolute;
-        font-family: 'Comfortaa', sans-serif;
         width: 100%;
         height: 2px;
         background-color: whitesmoke;
@@ -96,8 +98,7 @@
 }
 
 .nav-menu ul {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
     list-style: none;
     padding: 64px 32px 0 32px;
@@ -111,7 +112,7 @@
 }
 
 .nav-menu a:hover {
-    color: darkgrey;
+    color: royalblue;
 }
 
 
@@ -127,14 +128,81 @@
         width: 24px;
         height: auto;
         margin: 0 2px 0 2px;
-        filter: grayscale(0.5);
+        filter: invert(100%);
         transition: 0.2s;
     }
 
-    .sm-icons-menu img:hover {
-        filter: grayscale(0);
-    }
+/* Pierwsza treść */
 
+.container-fluid {
+    width: auto;
+    height: 100%;
+    background: url(img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.first-content {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 256px 0px;
+}
+
+/* Galeria powitalna */
+
+.welcome-gallery {
+    margin: 48px;
+}
+
+.photos h2 {
+    color: 303030;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.photos hr {
+    width: 48px;
+    margin-bottom: 48px;
+}
+
+.photos img {
+    max-width: 100%;
+    padding: 8px 0;
+    overflow: scroll;
+}
+
+.photos figcaption {
+    text-align: center;
+}
+
+.box {
+    border: 1px solid lightgray;
+    box-shadow: 0px 4px 12px whitesmoke;
+    margin: 8px;
+    padding: 8px 8px 24px 8px;
+}
+
+/* News */
+
+.news h2 {
+    color: 303030;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.news hr {
+    width: 48px;
+    margin-bottom: 48px;
+}
+
+.info {
+    border: 1px solid lightgray;
+    box-shadow: 0px 4px 12px whitesmoke;
+    margin: 64px;
+    padding: 8px 8px 24px 8px;
+}
 /* Desctop mode */
 
 @media (min-width: 768px) {
@@ -155,12 +223,8 @@
         width: 24px;
         height: auto;
         margin: 0 2px 0 2px;
-        filter: grayscale(0.5);
+        filter: invert(100%);
         transition: 0.2s;
-    }
-
-    .sm-icons img:hover {
-        filter: grayscale(0);
     }
 
     .sm-icons-menu {
@@ -186,6 +250,7 @@
     }
 
     .nav-menu ul {
+        font-size: 24px;
         padding: 64px 64px 0 64px;
     }
 }
