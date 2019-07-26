@@ -140,7 +140,7 @@
 .container-fluid {
     width: auto;
     height: 100%;
-    background: url(img/bg.jpg) no-repeat center fixed;
+    background: url(img/bg.jpg) no-repeat fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -151,6 +151,26 @@
     color: whitesmoke;
     text-align: center;
     padding: 288px 0px;
+}
+
+/* News */
+
+.news h2 {
+    color: #303030;
+    text-align: center;
+    margin-top: 128px;
+}
+
+.news hr {
+    width: 48px;
+    margin-bottom: 48px;
+}
+
+.info {
+    border: 1px solid lightgray;
+    box-shadow: 0px 4px 12px whitesmoke;
+    margin: 16px;
+    padding: 8px 8px 24px 8px;
 }
 
 /* Galeria powitalna */
@@ -184,26 +204,6 @@
     border: 1px solid lightgray;
     box-shadow: 0px 4px 12px whitesmoke;
     margin: 8px;
-    padding: 8px 8px 24px 8px;
-}
-
-/* News */
-
-.news h2 {
-    color: #303030;
-    text-align: center;
-    margin-top: 128px;
-}
-
-.news hr {
-    width: 48px;
-    margin-bottom: 48px;
-}
-
-.info {
-    border: 1px solid lightgray;
-    box-shadow: 0px 4px 12px whitesmoke;
-    margin: 64px;
     padding: 8px 8px 24px 8px;
 }
 
@@ -242,7 +242,9 @@
 .about-me p {
     border: 1px solid lightgray;
     box-shadow: 0px 4px 12px whitesmoke;
-    margin: 0 64px 64px 64px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 64px;
     padding: 24px;
 }
 
@@ -317,5 +319,16 @@
     .nav-menu ul {
         font-size: 24px;
         padding: 64px 64px 0 64px;
+    }
+
+    /* News */
+    .info {
+        margin: 64px;
+    }
+
+    /* STRONA O MNIE */
+    .about-me p {
+        margin-left: 64px;
+        margin-right: 64px;
     }
 }
