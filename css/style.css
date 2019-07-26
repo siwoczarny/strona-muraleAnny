@@ -141,7 +141,7 @@
 .container-fluid {
     width: auto;
     height: 100%;
-    background: url(img/bg-smart.jpg) no-repeat center center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center center scroll;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -216,7 +216,7 @@
     text-align: center;
     color: whitesmoke;
     font-size: 32px;
-    background: url(img/bg-smart.jpg) no-repeat center center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center center scroll;
     background-size: cover;
     padding: 168px 0px;
 }
@@ -254,7 +254,7 @@
 .stories-bg {
     width: auto;
     height: 100%;
-    background: url(img/bg-smart.jpg) no-repeat center center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center center scroll;
     background-size: cover;
     padding: 72px 0px;
 }
@@ -276,7 +276,7 @@
 .news-bg {
     width: auto;
     height: 100%;
-    background: url(img/bg-smart.jpg) no-repeat center center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center center scroll;
     background-size: cover;
     padding: 72px 0px;
 }
