@@ -140,7 +140,7 @@
 .container-fluid {
     width: auto;
     height: 100%;
-    background: url(img/bg.jpg) no-repeat fixed;
+    background: url(img/bg-smart.jpg) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -215,7 +215,7 @@
     text-align: center;
     color: whitesmoke;
     font-size: 32px;
-    background: url(img/bg.jpg) no-repeat center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center fixed;
     background-size: cover;
     padding: 168px 0px;
 }
@@ -253,7 +253,7 @@
 .stories-bg {
     width: auto;
     height: 100%;
-    background: url(img/bg.jpg) no-repeat center fixed;
+    background: url(img/bg-smart.jpg) no-repeat center fixed;
     background-size: cover;
     padding: 72px 0px;
 }
@@ -321,14 +321,31 @@
         padding: 64px 64px 0 64px;
     }
 
+    /* Pierwsza część */
+    .container-fluid {
+        background: url(img/bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
     /* News */
     .info {
         margin: 64px;
     }
 
     /* STRONA O MNIE */
+    .me {
+        background: url(img/bg.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
     .about-me p {
         margin-left: 64px;
         margin-right: 64px;
+    }
+
+    /* STRONA HISTORIE */
+    .stories-bg {
+        background: url(img/bg.jpg) no-repeat center center fixed;
+        background-size: cover;
     }
 }
