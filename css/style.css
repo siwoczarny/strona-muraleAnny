@@ -140,7 +140,7 @@
 .container-fluid {
     width: auto;
     height: 100%;
-    background: url(img/bg-smart.jpg) no-repeat center center fixed;
+    background: url(img/bg-smart.jpg) no-repeat fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -323,7 +323,7 @@
 
     /* Pierwsza część */
     .container-fluid {
-        background: url(img/bg.jpg) no-repeat center center fixed;
+        background: url(img/bg.jpg) no-repeat fixed;
         background-size: cover;
     }
 
@@ -334,7 +334,7 @@
 
     /* STRONA O MNIE */
     .me {
-        background: url(img/bg.jpg) no-repeat center center fixed;
+        background: url(img/bg.jpg) no-repeat fixed;
         background-size: cover;
     }
 
@@ -345,7 +345,7 @@
 
     /* STRONA HISTORIE */
     .stories-bg {
-        background: url(img/bg.jpg) no-repeat center center fixed;
+        background: url(img/bg.jpg) no-repeat fixed;
         background-size: cover;
     }
 }
