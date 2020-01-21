@@ -20,7 +20,7 @@
     font-weight: 300;
     text-align: left;
     color: whitesmoke;
-    margin-left: 32px;
+    margin-left: 16px;
 }
 
 .sm-icons {
@@ -32,7 +32,7 @@
     .hamburger {
         position: fixed;
         top: 16px;
-        right: 32px;
+        right: 16px;
         width: 24px;
         height: 16px;
         z-index: 2;
@@ -140,8 +140,8 @@
 
 .container-fluid {
     width: auto;
-    height: 100%;
-    background: url(img/bg-smart.jpg) no-repeat center center scroll;
+    height: 100vh;
+    background: url(./img/bg-smart.jpg) no-repeat center center scroll;
     background-size: cover;
     margin: 0;
     padding: 0;
